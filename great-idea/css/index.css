@@ -64,3 +64,346 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.wholeContainer{
+	margin: 0 auto;
+	margin: 1% 25% 5% 25%;
+	padding: 40px;
+	border: 1px solid black;
+}
+
+/* Section for Nav bar*/
+nav{
+	display: flex;
+	width: 100%;
+	height: 5vh;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav a{
+	color: grey;
+	text-decoration: none;
+}
+
+
+
+/* Section for Header*/
+header{
+	display: flex;
+	width: 100%;
+	height: 45vh;
+	justify-content: space-around;
+	align-items: center;
+}
+h1{
+	font-size: 70px;
+	text-align: center;
+	
+}
+.alignButton a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 1% 7% 1% 7%;
+}
+header .alignButton{
+	display: flex;
+	width: 50%;
+	height: 45vh;
+	flex-direction: column;
+	align-items: center;
+	margin: 20% 0% 0% 0%;
+}
+
+
+/* Section for Top Section*/
+.topSection{
+	display: flex;
+	width: 100%;
+	height: 20vh;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+
+/* Section for Image Seperator and Section Seperator*/
+.imageSeperator{
+	display: flex;
+	width: 100%;
+	height: 15vh;
+}
+hr.thin {
+	height: 1px;
+	border: 0;
+	color: #333;
+	background-color: #333;
+	width: 100%;
+}
+hr.thin2 {
+	height: 4px;
+	color: #333;
+	background-color: #333;
+	width: 100%;
+}
+
+
+/* Section for Middle Section*/
+.middleSection{
+	display: flex;
+	width: 100%;
+	height: 25vh;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+/* Section for Contact*/
+.contact{
+	display: flex;
+	width: 100%;
+	height: 20vh;
+  	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;   
+}
+
+
+
+/* Section for Copyright*/
+footer{
+	display: flex;
+	width: 100%;
+	height: 3vh;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	font-size: 10px;	
+}
+
+/* Services page*/
+.services p, services h1, services h2{
+	font-size: 15px;
+	line-height: 130%;
+}
+
+/* Section for imageheader*/
+.imageHeader{
+	display: flex;
+	width: 100%;
+	height: 25vh;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+/* Section for services*/
+.serviceSection{
+	display: flex;
+	width: 100%;
+	height: 15vh;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.serviceSection h1{
+	font-size: 30px;
+	
+}
+
+/* Section for boxes*/
+.boxes{
+	display: flex;
+	width: 100%;
+	height: 95vh;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.boxes div{
+	border: 1px solid black;
+	background-color: #F4F4F4;
+	width: 48%;
+	height: 27vh;
+	margin: 3% 0;
+	padding: 3%;
+}
+.boxes a{
+	border: 1px solid black;
+	background-color: white;
+	padding: 1.5% 10%;
+	margin: 90% 0 0 0;
+	text-decoration: none;
+	border-radius: 5px;
+	color: black;
+	font-size: 13px;
+}
+/* Section for bottom*/
+.facts{
+	display: flex;
+	width: 100%;
+	height: 40vh;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 4% 0;
+}
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 180%;
+  }
+.facts div{
+	width: 45%;
+	height: 23vh;
+}
+/* Section for Copyright*/
+.copyright{
+	font-size: 16px;
+}
+
+/* Our Vision*/
+
+/* Header*/
+
+.serviceSection2{
+	display: flex;
+	width: 100%;
+	height: 15vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align:  center;
+}
+.serviceSection2 h1{
+	font-size: 30px;
+	
+}
+/* Section for images*/
+.facts1{
+	display: flex;
+	width: 100%;
+	height: 40vh;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 4% 0;
+}
+.facts1 div{
+	width: 49%;
+	height: 33vh;
+}
+@media screen and (max-width: 640px){
+	.container{
+	  display: block;
+	  width: 100%;
+	}
+  }
+
+  @media screen and (min-width: 900px){
+	.container{
+	  width: 33.33333%;
+	}
+  }
+
+  .container .title{
+	color: #1a1a1a;
+	text-align: center;
+	margin-bottom: 10px;
+  }
+
+  .content {
+	position: relative;
+	width: 90%;
+	max-width: 400px;
+	margin: auto;
+	overflow: hidden;
+  }
+
+  .content .content-overlay {
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	height: 99%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+  }
+
+  .content:hover .content-overlay{
+	opacity: 1;
+  }
+
+
+
+.content-details {
+position: absolute;
+text-align: center;
+padding-left: 1em;
+padding-right: 1em;
+width: 100%;
+top: 50%;
+left: 50%;
+opacity: 0;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+-webkit-transition: all 0.3s ease-in-out 0s;
+-moz-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+top: 50%;
+left: 50%;
+opacity: 1;
+}
+
+.content-details h3{
+color: #fff;
+font-weight: 500;
+letter-spacing: 0.15em;
+margin-bottom: 0.5em;
+text-transform: uppercase;
+}
+
+.content-details p{
+color: #fff;
+font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+top: 80%;
+}
+/* Section for Copyright*/
+.boxes2{
+	display: flex;
+	width: 100%;
+	height: 30vh;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.boxes2 div{
+	border: 1px solid black;
+	background-color: lightskyblue;
+	width: 48%;
+	height: 27vh;
+	margin: 3% 0;
+	padding: 3%;
+}
+.boxes2 a{
+	border: 1px solid black;
+	background-color: white;
+	padding: 1.5% 10%;
+	margin: 90% 0 0 0;
+	text-decoration: none;
+	border-radius: 5px;
+	color: black;
+	font-size: 13px;
+}
+/* Section for Copyright*/
+
+/* Section for Copyright*/
